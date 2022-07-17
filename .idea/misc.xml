@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/栈与队列/pom.xml" />
+        <option value="$PROJECT_DIR$/链表/pom.xml" />
+        <option value="$PROJECT_DIR$/链表/字符串/pom.xml" />
+        <option value="$PROJECT_DIR$/字符串/pom.xml" />
+        <option value="$PROJECT_DIR$/查找算法/pom.xml" />
+        <option value="$PROJECT_DIR$/单调栈/pom.xml" />
+        <option value="$PROJECT_DIR$/深度优先搜索/pom.xml" />
+        <option value="$PROJECT_DIR$/前缀和与差分/pom.xml" />
+        <option value="$PROJECT_DIR$/二叉树/pom.xml" />
+        <option value="$PROJECT_DIR$/滑动窗口/pom.xml" />
+        <option value="$PROJECT_DIR$/前缀和哈希/pom.xml" />
+        <option value="$PROJECT_DIR$/栈与队列/优先队列和堆/pom.xml" />
+        <option value="$PROJECT_DIR$/优先队列和堆/pom.xml" />
+        <option value="$PROJECT_DIR$/动态规划/pom.xml" />
+        <option value="$PROJECT_DIR$/贪心/pom.xml" />
+        <option value="$PROJECT_DIR$/广度优先搜索/pom.xml" />
+        <option value="$PROJECT_DIR$/双指针/pom.xml" />
+        <option value="$PROJECT_DIR$/其他/pom.xml" />
+        <option value="$PROJECT_DIR$/位运算/pom.xml" />
+        <option value="$PROJECT_DIR$/哈希/pom.xml" />
+        <option value="$PROJECT_DIR$/多线程/pom.xml" />
+        <option value="$PROJECT_DIR$/并查集/pom.xml" />
+        <option value="$PROJECT_DIR$/背包问题/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>
