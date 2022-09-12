@@ -2,26 +2,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateParenthesis {
-    static List<String> res = new ArrayList<>();
-
+    static List<String> res =new ArrayList<>();
+    static StringBuilder stringBuilder =new StringBuilder();
     public static void main(String[] args) {
-        List<String> list = generateParenthesis(6);
-        System.out.println(list);
+        int n = 3;
+        System.out.println(generateParenthesis(n));
     }
-
-    public static List<String> generateParenthesis(int n) {
-        dfs(n, "",0,0);
+    public static List<String> generateParenthesis(int n){
+        int left = 0, right = 0;
+        backTrack(n, left, right);
         return res;
     }
-
-    public static void dfs(int n, String s, int left, int right) {
-        if (left > n || right > left) {
+    public static void backTrack(int n, int left, int right){
+        if(left > n || right > left){
             return;
         }
-        if (left == right && left == n) {
-            res.add(s);
+        if(left == n && right == n){
+            res.add(new String(stringBuilder));
         }
-        dfs(n, s + "(", left + 1, right);
-        dfs(n, s + ")", left, right + 1);
+        stringBuilder.append('(');
+        backTrack(n, left + 1, right);
+        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+        stringBuilder.append(')');
+        backTrack(n, left, right + 1);
+        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
     }
 }
