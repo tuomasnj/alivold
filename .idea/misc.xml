@@ -26,7 +26,13 @@
         <option value="$PROJECT_DIR$/多线程/pom.xml" />
         <option value="$PROJECT_DIR$/并查集/pom.xml" />
         <option value="$PROJECT_DIR$/背包问题/pom.xml" />
+        <option value="$PROJECT_DIR$/图论/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/滑动窗口/图论/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager">

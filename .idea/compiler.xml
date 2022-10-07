@@ -9,7 +9,6 @@
         <module name="字符串" />
         <module name="二叉树" />
         <module name="广度优先搜索" />
-        <module name="滑动窗口" />
         <module name="贪心" />
         <module name="双指针" />
         <module name="其他" />
@@ -20,6 +19,7 @@
         <module name="单调栈" />
         <module name="优先队列和堆" />
         <module name="背包问题" />
+        <module name="图论" />
         <module name="链表" />
         <module name="多线程" />
         <module name="并查集" />
@@ -41,6 +41,7 @@
       <module name="单调栈" target="1.8" />
       <module name="双指针" target="1.8" />
       <module name="哈希" target="1.8" />
+      <module name="图论" target="1.5" />
       <module name="多线程" target="1.8" />
       <module name="字符串" target="1.8" />
       <module name="并查集" target="1.5" />

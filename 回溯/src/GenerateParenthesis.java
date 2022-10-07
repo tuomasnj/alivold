@@ -2,29 +2,39 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateParenthesis {
-    static List<String> res =new ArrayList<>();
-    static StringBuilder stringBuilder =new StringBuilder();
+    static List<String> res = new ArrayList<>();
+    static List<Character> storeLeft = new ArrayList<>();
+
     public static void main(String[] args) {
         int n = 3;
         System.out.println(generateParenthesis(n));
     }
-    public static List<String> generateParenthesis(int n){
-        int left = 0, right = 0;
-        backTrack(n, left, right);
+
+    public static List<String> generateParenthesis(int n) {
+        StringBuilder sb = new StringBuilder();
+        backTrack(sb, n, 0, 0);
         return res;
     }
-    public static void backTrack(int n, int left, int right){
-        if(left > n || right > left){
+
+    public static void backTrack(StringBuilder sb, int n, int left, int right) {
+        if (left > n) {
             return;
         }
-        if(left == n && right == n){
-            res.add(new String(stringBuilder));
+        if (sb.length() == 2 * n) {
+            res.add(sb.toString());
+            return;
         }
-        stringBuilder.append('(');
-        backTrack(n, left + 1, right);
-        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
-        stringBuilder.append(')');
-        backTrack(n, left, right + 1);
-        stringBuilder.deleteCharAt(stringBuilder.length() - 1);
+        sb.append('(');
+        storeLeft.add('(');
+        backTrack(sb, n, left + 1, right);
+        sb.deleteCharAt(sb.length() - 1);
+        storeLeft.remove(storeLeft.size() - 1);
+        if (storeLeft.size() > 0) {
+            sb.append(')');
+            storeLeft.remove(storeLeft.size() - 1);
+            backTrack(sb, n, left, right + 1);
+            sb.deleteCharAt(sb.length() - 1);
+            storeLeft.add('(');
+        }
     }
 }
